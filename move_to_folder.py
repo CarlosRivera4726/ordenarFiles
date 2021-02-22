@@ -56,4 +56,4 @@ try:
     moverADirectorio(archivosJpeg, "IMG")
     moverADirectorio(archivosTxt, "TEXTOS")
 except:
-    print("no sé")
+    print("NO FUE POSIBLE MOVER EL/LOS ARCHIVOS!")
