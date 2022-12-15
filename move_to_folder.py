@@ -4,7 +4,6 @@ def buscarGeneral(tipoArchivo):
     i=0
     archivos = os.listdir()
     archivosGenerales = []
-    tipoArchivo = str(tipoArchivo)
     while i < len(archivos):
         if archivos[i].find(tipoArchivo) != -1 :
             archivosGenerales.append(archivos[i])
@@ -18,7 +17,8 @@ def moverADirectorio(archivos,carpetaDestino):
             for i in archivos:
                 os.system("move "+ '"'+i+'"'+" "+carpetaDestino)
     except:
-        print("No sé")
+        print("Error al mover el archivo")
+
 def crearDirectorio(nombreDirectorio):
     return os.system("mkdir "+nombreDirectorio)
 
